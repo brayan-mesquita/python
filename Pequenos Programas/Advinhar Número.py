@@ -1,13 +1,10 @@
 import random
-contador = 0
 
-while contador < 5:
-    contador += 1
-    
+while True:
     aleatorio = random.randint(0,10)
-    numero = input('Dige um número: ')
-
+    numero = int(input('Dige um número: '))
     if numero == aleatorio:
-        print(f'Você acertou!') 
+        print(f'Você acertou {numero}')
+        break
     else:
-        print(f'Você errou, o número era {aleatorio}')
+        print(f'Você errou, digitou {numero} e deu {aleatorio}')
