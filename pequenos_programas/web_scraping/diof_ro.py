@@ -20,7 +20,7 @@ def search_doe(lista, word):
     for x in lista:
         if word in x:
             links_doe.append(x)
-    return links_doe
+    return links_doe 
 
 links_doe = search_doe(search_all_links(), 'pdf')
 for doe in links_doe:
@@ -30,4 +30,3 @@ for doe in links_doe:
 #data_e_hora_atuais = datetime.now()
 #data_e_hora_atuais = data_e_hora_atuais.strftime('%d/%m/%Y %H:%M')
 links_com_pdf = [valor for valor in links_doe if 'pdf'  in valor ]
-
