@@ -5,6 +5,8 @@ from bs4 import BeautifulSoup
 url = 'http://www.columbia.edu/~fdc/sample.html'
 response = requests.get(url)
 
+#status code 200, 404 etc
+response.status_code
 #bs4
 page = BeautifulSoup(response.text, 'html.parser')
 
